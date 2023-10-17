@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore o universo</title>
+</head>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-image: url(./assets/mountains-universe-1.png);
+    color: white;
+  }
+
+  nav {
+    margin: 50px;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #C4C4CC;
+  }
+
+  .content {
+    display: grid;
+    place-content: center;
+    height: 83vh;
+  }
+
+  button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 32px;
+
+    margin-top: 24px;
+  }
+
+  button a {
+    text-decoration: none;
+    color: white
+  }
+</style>
+
+<body>
+
+  <nav>
+    <span><img src="./assets/Vector (2).png" alt="Imagem sobre as constelações e o universo"></span>
+    <a href="/" onclick="route()">Home</a>
+    <a href="/universo" onclick="route()">O Universo</a>
+    <a href="/exploracao" onclick="route()">Exploração</a>
+    <a href="/404" onclick="route()" style="display: none;">404</a>
+  </nav>
+
+  <div id="app"></div>
+
+  <script src="js/index.js" type="module">
+  </script>
+</body>
+
+</html>
